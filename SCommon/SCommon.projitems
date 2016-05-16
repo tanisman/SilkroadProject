@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>1ced3d69-af5c-44f5-985c-33f28c7f521a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SCommon</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Database\MSSQL.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Enumerations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Geometry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logging.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Networking\SocketContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Networking\TCPServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ObjectPool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Opcode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PooledList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Security\Blowfish.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Security\Packet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Security\PacketReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Security\PacketWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Security\Security.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Security\TransferBuffer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utility.cs" />
+  </ItemGroup>
+</Project>
