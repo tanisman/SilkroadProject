@@ -176,6 +176,11 @@
             return true;
         }
 
+        public node<T> first()
+        {
+            return this.Head.next_;
+        }
+
         public void ForEach(Action<T> action)
         {
             node<T> node = m_head.next_;
@@ -234,7 +239,7 @@
             internal Enumarator(PooledList<T> list)
             {
                 this.list = list;
-                this.node = list.Head.next_;
+                this.node = list.first();
                 this.current = null;
                 this.lastlock = null;
             }

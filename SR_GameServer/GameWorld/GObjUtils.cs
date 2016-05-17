@@ -230,7 +230,7 @@
 
         public static GObj FindGObjByUniqueID(int uid)
         {
-            var node = Data.Globals.GObjList.Head.next_;
+            var node = Data.Globals.GObjList.first();
             while (node != null)
             {
                 lock (node.locker_)
@@ -248,7 +248,7 @@
 
         public static GObjChar FindGObjCharByName(string name)
         {
-            var node = Data.Globals.GObjList.Head.next_;
+            var node = Data.Globals.GObjList.first();
             while (node != null)
             {
                 lock (node.locker_)
@@ -267,7 +267,7 @@
         
         public static void BroadcastPacket(Packet pkt)
         {
-            var node = Data.Globals.GObjList.Head.next_;
+            var node = Data.Globals.GObjList.first();
             while (node != null)
             {
                 lock (node.locker_)

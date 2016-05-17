@@ -122,7 +122,7 @@
                 group_despawn = new Packet(SCommon.Opcode.Agent.GAMEOBJECT_SPAWN_GROUP_DATA);
             }
 
-            node<GObj> node = Data.Globals.GObjList.Head.next_;
+            node<GObj> node = Data.Globals.GObjList.first();
             while (node != null)
             {
                 lock (node.locker_)
@@ -219,7 +219,7 @@
                 group_despawn = new Packet(SCommon.Opcode.Agent.GAMEOBJECT_SPAWN_GROUP_DATA);
             }
 
-            node<GObj> node = Data.Globals.GObjList.Head.next_;
+            node<GObj> node = Data.Globals.GObjList.first();
             while (node != null)
             {
                 lock (node.locker_)
