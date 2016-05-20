@@ -1,23 +1,23 @@
 # SilkroadProject
 Silkroad Online Emulator for Open Beta Client
 
-# Requirements
+### Requirements
 - Visual Studio 2015
 - Microsoft SQL Server 2008 or above
 - Asio 1.10.6 for SCore (our AsyncTimer uses asio)
 
-# How To Setup Server
+### How To Setup Server
 - Restore database dumps
 - Edit _ServerConfig table in SR_Global
 - Edit GatewayServer/Data/Globals.cs and SR_GameServer/Data/Globals.cs for connection strings
 - Compile project with visual studio and run
 
-# How To Setup Client
+### How To Setup Client
 - Open Media.pk2 with pk2 extractor and export GATEIP.txt
 - Open GATEIP.txt with a hex editor and edit ip address (fill with zeroes remaining)
 - Open client with IP Input change ip address again (aka change DIVISIONINFO.txt)
 
-# How To Contribute Project
+### How To Contribute Project
 - You can make pull requests to contribute project.
   1. Your code must match projects design.
   2. Prevent deadlocks when interacting another client.
@@ -25,7 +25,7 @@ Silkroad Online Emulator for Open Beta Client
   4. Use async Task<T> for heavy operations
   5. Test your code carefully.
 
-# Links for projects
+### Links for projects
 Description | Link
 ------------ | -------------
 Database Dumps | https://mega.nz/#!UAIRWJTK!66r4XsTFAbfazIP5CvrYqQYHGyuXpLWyaH36cNWVRRc
