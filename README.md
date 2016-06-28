@@ -9,6 +9,7 @@ Silkroad Online Emulator for Open Beta Client
 ### How To Setup Server
 - Restore database dumps
 - Edit _ServerConfig table in SR_Global
+- Extract your data.pk2 to data/ folder
 - Edit GatewayServer/Data/Globals.cs and SR_GameServer/Data/Globals.cs for connection strings
 - Compile project with visual studio and run
 
